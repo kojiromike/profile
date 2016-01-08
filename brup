@@ -1,0 +1,3 @@
+#!/bin/sh
+
+brew up && exec brew upgrade --all
