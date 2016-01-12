@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+##
+# Create a directory and make it a git repo
+main() {
+    set -e 
+    [[ $1 ]]
+    mkdir -p "$1"
+    cd "$1"
+    git init .
+    git commit --allow-empty --message='Initial Commit'
+}
+
+main "$@"
